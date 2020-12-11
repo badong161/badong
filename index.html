@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Page Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+         <div class="nav-wrapper">
+             <div class="left-side">
+                 <div class="nav-link-wrapper active-nav-link">
+                     <a href="index.html">Home</a>
+                 </div>
+
+                 <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                  </div>
+              </div>
+
+             <div class="right-side">
+                 <div class="brand">
+                    <div>RYAN MAGNO</div>
+                  </div>
+              </div>
+         </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                      
+
+                        <div class="subtitle">
+                            Kobe Bryant has always been a muse of mine. With his passing it does feel like I have a piece missing from me. That is why he left behind his "Mamba Mentality"... and that is what I live by.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                       
+
+                        <div class="subtitle">
+                            I currently have two YouTube channels displaying my daily life as a Calgarian. Albert & Ryan is the channel where I post weekly vlogs and the other is showcasing various video games I love to play.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                     
+
+                        <div class="subtitle">
+                            One of the video games I love to play is Valorant. A FPS Shooter game that I love dedicating my time to (maybe a little too much time). The thrill of being able to play a competitive video game is really exciting to me!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                       
+
+                        <div class="subtitle">
+                            Twitch.tv is another one of the platforms I use to display my talents in the various video games I love to play. Displaying my skills in a ranked based video game is very exciting to watch... maybe you should come watch sometime? <br /> twitch.tv/badong161
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                      
+
+                        <div class="subtitle">
+                            Instagram is a platform I love to share on! The ability to reach out to random people on social media to gain followers, likes, traffic to your own business is something Instagram is very useful for. <br /> instagram.com/r_magno161
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                       
+
+                        <div class="subtitle">
+                            Sneakers have always been a part of my life. Growing up around so called "sneakerheads" it has greatly influenced my style. Michael Jordan himself has also been another muse of mine, shaking his hand in Las Vegas was the closest I got to meeting the Legend himself.
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+     </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+         portfolioItem.childNodes[1].classList.add('img-darken');
+      })
+
+      portfolioItem.addEventListener('mouseout', () => {
+         portfolioItem.childNodes[1].classList.remove('img-darken');
+      })
+    })
+</script>
+</html>
